@@ -1,0 +1,53 @@
+name: Bug Report
+description: File a bug report
+title: "bug[optional scope]: <title>"
+labels: ["bug", "triage"]
+assignees: ["james1miller93"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        *Before filling out this form, please make sure there aren't any open/closed issues for this topic.*
+
+        *Please provide as much detail as possible so we can test and resolve the issue as soon as possible.*
+
+        *The title on this issue uses the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) spec to aid with automation. Please follow the formatting used in the title template.*
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version the code are you using?
+      placeholder: ex. 0.1.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description of the bug
+      description: Give us a brief description of what happened and what should have happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: |
+        Provide any additional information such as logs, screenshots, links, scenarios in which the bug occurs so that it facilitates resolving the issue.

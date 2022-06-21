@@ -1,0 +1,23 @@
+name: General Question
+description: Ask a question to the maintainers
+title: "question: <title>"
+labels: ["question", "triage"]
+assignees: ["james1miller93"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form!
+
+        *Before submitting this form, please make sure this question hasn't already been submitted by looking through other open/closed issues and the `FAQ.md` file in the repository (if present)*
+
+        *The title on this issue uses the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) spec to aid with automation. Please follow the formatting used in the title template.*
+
+  - type: textarea
+    id: question
+    attributes:
+      label: The Question
+      description: What would you like to know?
+      placeholder: Ask a question
+    validations:
+      required: true
